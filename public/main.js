@@ -12,13 +12,13 @@ document.querySelectorAll(".nav-links a").forEach((a) =>
 const planSelect = document.getElementById("plan-select");
 document.querySelectorAll("[data-plan]").forEach((btn) =>
   btn.addEventListener("click", () => {
-    planSelect.value = btn.dataset.plan;
+    if (planSelect) planSelect.value = btn.dataset.plan;
   })
 );
 
 // Contact form opens the visitor's email app with the details filled in
 const CONTACT_EMAIL = "contact@adsmanagementpro.com";
-document.getElementById("contact-form").addEventListener("submit", (e) => {
+document.getElementById("contact-form")?.addEventListener("submit", (e) => {
   e.preventDefault();
   const f = new FormData(e.target);
   const subject = `Ads management enquiry: ${f.get("plan")}`;
