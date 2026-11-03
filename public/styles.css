@@ -149,3 +149,13 @@ details p { color: var(--muted); margin: 12px 0 0; }
   .hero { padding: 64px 0 56px; }
   .section { padding: 64px 0; }
 }
+
+/* Contact page */
+.page-hero { padding: 72px 0 24px; }
+.page-hero .lead { margin-bottom: 0; }
+.contact-info-section { padding-top: 40px; }
+.contact-cards { grid-template-columns: repeat(4, 1fr); }
+.contact-card p, .contact-card address { margin: 0 0 6px; color: var(--muted); font-style: normal; overflow-wrap: anywhere; }
+.nav-links a[aria-current="page"] { color: var(--text); }
+@media (max-width: 960px) { .contact-cards { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 720px) { .contact-cards { grid-template-columns: 1fr; } }
