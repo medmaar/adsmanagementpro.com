@@ -17,7 +17,7 @@ document.querySelectorAll("[data-plan]").forEach((btn) =>
 );
 
 // Contact form opens the visitor's email app with the details filled in
-const CONTACT_EMAIL = "contact@adsmanagementpro.com";
+const CONTACT_EMAIL = "mo.maaroufy@gmail.com";
 document.getElementById("contact-form")?.addEventListener("submit", (e) => {
   e.preventDefault();
   const f = new FormData(e.target);
